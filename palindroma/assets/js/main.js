@@ -41,7 +41,7 @@ function isPalindrome(word){
 
 do{
     var parola = prompt("Inserisci una parola e ti dirò se è palindroma");
-} while(parola == null);
+} while(parola == null || parola == "" || parola == " ");
 
 if(isPalindrome(parola)){
     console.log("La parola " + parola + " è palindroma");
