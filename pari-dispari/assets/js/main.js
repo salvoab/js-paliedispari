@@ -38,9 +38,8 @@ function isEven(number){
 var keepAsking = true;
 while(keepAsking){
     var pariDispari = prompt("Scegli pari o dispari");
-    if(pariDispari != null)
-    {
-        pariDispari = pariDispari.toLocaleLowerCase();
+    if(pariDispari != null) {
+        pariDispari = pariDispari.toLowerCase();
     }
         
     if(pariDispari != "pari" && pariDispari != "dispari"){
@@ -56,8 +55,7 @@ console.log("Hai scelto: " + pariDispari);
 keepAsking = true;
 while(keepAsking){
     var numeroUtente = prompt("Scegli un numero intero compreso fra 1 e 5 (estremi inclusi)");
-    if(numeroUtente != null)
-    {
+    if(numeroUtente != null) {
         numeroUtente = parseInt(numeroUtente);
     }
         
