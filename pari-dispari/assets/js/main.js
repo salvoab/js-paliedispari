@@ -18,4 +18,18 @@ function getRondomIntegerMinMax(min, max){
 }
 
 //test
-console.log(getRondomIntegerMinMax(1,5));
+//console.log(getRondomIntegerMinMax(1,5));
+
+/**
+ * Check if the number is even or odd.
+ * 
+ * @param {number} number number to check.
+ * @return {boolean}      true if number is even, false otherwise.
+ */
+function isEven(number){
+    return number % 2 === 0;
+}
+
+//test
+console.log(isEven(4)); //true
+console.log(isEven(9)); //false
