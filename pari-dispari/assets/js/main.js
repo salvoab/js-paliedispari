@@ -53,9 +53,9 @@ while(keepAsking){
 console.log("Hai scelto: " + pariDispari);
 
 //Controllo sull'input del numero fra 1 e 5
-var keepAsking = true;
+keepAsking = true;
 while(keepAsking){
-    var numeroUtente = prompt("Scegli un numero intero compreso fra 1 e 5");
+    var numeroUtente = prompt("Scegli un numero intero compreso fra 1 e 5 (estremi inclusi)");
     if(numeroUtente != null)
     {
         numeroUtente = parseInt(numeroUtente);
@@ -63,7 +63,7 @@ while(keepAsking){
         
     if(isNaN(numeroUtente) || numeroUtente <1 || numeroUtente > 5 ){
         keepAsking = true;
-        alert("ATTENZIONE! Puoi inserire solo un numero intero compreso fra 1 e 5");
+        alert("ATTENZIONE! Puoi inserire solo un numero intero compreso fra 1 e 5 (estremi inclusi)");
     } else{
         keepAsking = false;
     }
