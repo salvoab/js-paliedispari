@@ -17,7 +17,7 @@ function isPalindrome(word){
         }
     }
 
-    if(keepChecking && (leftIndex > rightIndex) ){
+    if( leftIndex > rightIndex ){
         return true;
     }
     return false;
@@ -27,3 +27,7 @@ function isPalindrome(word){
 console.log( isPalindrome("osso") );
 console.log( isPalindrome("oro") );
 console.log( isPalindrome("orso") );
+console.log( isPalindrome("corso") );
+console.log( isPalindrome("kayak") );
+
+
