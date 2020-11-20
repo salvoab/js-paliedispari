@@ -3,7 +3,12 @@
 * Creare una funzione per capire se la parola inserita è palindroma
 ********************************************************************/
 
-
+/**
+ * Check if the string in word is a palindrome.
+ * 
+ * @param {string} word The word to check.
+ * @return {boolean} true if word is palindrome, false otherwise.
+ */
 function isPalindrome(word){
     var leftIndex = 0, rightIndex = word.length - 1;
     var keepChecking = true;
