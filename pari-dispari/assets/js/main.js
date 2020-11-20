@@ -6,3 +6,16 @@
 * Dichiariamo chi ha vinto.
 *************************************************************************************/
 
+/**
+ * Generates a random integer number between a minimum and a maximum number (both included).
+ * 
+ * @param {number} min  minimum random number.
+ * @param {number} max  maximum random number.
+ * @return {number}     random number between min and max
+ */
+function getRondomIntegerMinMax(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+//test
+console.log(getRondomIntegerMinMax(1,5));
