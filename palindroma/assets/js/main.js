@@ -38,13 +38,15 @@ function isPalindrome(word){
 // console.log( isPalindrome("e") );     //true Ho scelto che una singola lettera sia da considerare palindroma
 // console.log( isPalindrome("KaYak") ); //true Ho scelto che per la funzione non faccia differenza fra caratteri minuscoli e maiuscoli
 
-
+var risultato = document.getElementById("risultato");
 do{
     var parola = prompt("Inserisci una parola e ti dirò se è palindroma");
 } while(parola == null || parola == "" || parola == " ");
 
 if(isPalindrome(parola)){
     console.log("La parola " + parola + " è palindroma");
+    risultato.innerHTML = "La parola " + parola + " è palindroma";
 } else{
     console.log("La parola " + parola + " NON è palindroma");
+    risultato.innerHTML = "La parola " + parola + " NON è palindroma";
 }

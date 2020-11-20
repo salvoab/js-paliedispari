@@ -69,3 +69,22 @@ while(keepAsking){
     }
 }
 console.log("Hai scelto il numero: " + numeroUtente);
+
+var numeroPc = getRondomIntegerMinMax(1,5);
+console.log("Il PC ha estratto il numero: " + numeroPc);
+var somma = numeroUtente + numeroPc;
+console.log("La somma dei due numeri vale: " + somma);
+//Indico chi ha vinto
+if(isEven(somma)){
+    if(pariDispari == "pari"){
+        console.log("La somma è un numero pari e tu hai scelto pari quindi: HAI VINTO!");
+    } else{
+        console.log("La somma è un numero pari e tu hai scelto dispari quindi: HAI PERSO!");
+    }
+} else {
+    if(pariDispari == "dispari"){
+        console.log("La somma è un numero dispari e tu hai scelto dispari quindi: HAI VINTO!");
+    } else {
+        console.log("La somma è un numero dispari e tu hai scelto pari quindi: HAI PERSO!");
+    }
+}
